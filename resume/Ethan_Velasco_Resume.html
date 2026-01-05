@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethan Velasco - Resume</title>
+    <style>
+        @page {
+            margin: 0.75in;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', 'Helvetica', sans-serif;
+            line-height: 1.6;
+            color: #1e293b;
+            font-size: 11pt;
+            background: white;
+        }
+        
+        .resume-container {
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0;
+        }
+        
+        /* Header Section */
+        .header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 3px solid #2563eb;
+            margin-bottom: 20px;
+        }
+        
+        .header h1 {
+            font-size: 28pt;
+            color: #2563eb;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+        
+        .header .title {
+            font-size: 14pt;
+            color: #64748b;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        
+        .header .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 10pt;
+            color: #64748b;
+        }
+        
+        .header .contact-info span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        /* Section Styles */
+        .section {
+            margin-bottom: 20px;
+            page-break-inside: avoid;
+        }
+        
+        .section-title {
+            font-size: 16pt;
+            color: #2563eb;
+            font-weight: 700;
+            margin-bottom: 12px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #e2e8f0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Professional Summary */
+        .summary {
+            text-align: justify;
+            line-height: 1.8;
+            color: #475569;
+        }
+        
+        /* Experience & Education Items */
+        .item {
+            margin-bottom: 18px;
+            page-break-inside: avoid;
+        }
+        
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 6px;
+        }
+        
+        .item-title {
+            font-size: 13pt;
+            font-weight: 700;
+            color: #1e293b;
+        }
+        
+        .item-company {
+            font-size: 12pt;
+            font-weight: 600;
+            color: #2563eb;
+            margin-top: 2px;
+        }
+        
+        .item-date {
+            font-size: 10pt;
+            color: #64748b;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        
+        .item-location {
+            font-size: 10pt;
+            color: #64748b;
+            font-style: italic;
+            margin-top: 2px;
+        }
+        
+        .item-description {
+            margin-top: 8px;
+        }
+        
+        .item-description ul {
+            margin-left: 20px;
+            margin-top: 6px;
+        }
+        
+        .item-description li {
+            margin-bottom: 4px;
+            color: #475569;
+            line-height: 1.6;
+        }
+        
+        /* Skills Section */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+        
+        .skill-category {
+            margin-bottom: 12px;
+        }
+        
+        .skill-category h4 {
+            font-size: 11pt;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 6px;
+        }
+        
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        
+        .skill-tag {
+            background-color: #f1f5f9;
+            color: #475569;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 9pt;
+            border: 1px solid #e2e8f0;
+        }
+        
+        /* Two Column Layout */
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        
+        /* Print Styles */
+        @media print {
+            body {
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+            
+            .section {
+                page-break-inside: avoid;
+            }
+            
+            .item {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <!-- Header -->
+        <div class="header">
+            <h1>Ethan Velasco</h1>
+            <div class="title">AI/ML Engineer</div>
+            <div class="contact-info">
+                <span>📧 awesomecode1234@gmail.com</span>
+                <span>🌐 <a href="https://www.linkedin.com/in/ethan-velasco-2563eb/" style="color: #64748b; text-decoration: none;">LinkedIn</a></span>
+                <span>💻 <a href="https://github.com/awesomecode1234" style="color: #64748b; text-decoration: none;">GitHub</a></span>
+                <span>📍Manhattan Beach, CA, USA, 90266</span>
+            </div>
+        </div>
+        
+        <!-- Professional Summary -->
+        <div class="section">
+            <h2 class="section-title">Professional Summary</h2>
+            <div class="summary">
+                Experienced AI/ML Engineer with 10+ years of expertise in developing and deploying machine learning models across various industries. Specialized in Computer Vision, Speech Processing (TTS, STT, Diarization), Large Language Models (Chatbots, Video Bots, Voice Bots), and Full Stack Development. Proven track record of building scalable AI solutions that solve real-world problems, with experience working at leading technology companies in both the Philippines and the United States. Currently seeking new opportunities to contribute to impactful AI projects and collaborate with forward-thinking teams.
+            </div>
+        </div>
+        
+        <!-- Work Experience -->
+        <div class="section">
+            <h2 class="section-title">Work Experience</h2>
+            
+            <div class="item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Senior AI/ML Engineer</div>
+                        <div class="item-company">Applied Intuition</div>
+                        <div class="item-location">Mountain View, USA</div>
+                    </div>
+                    <div class="item-date">2022 - Present</div>
+                </div>
+                <div class="item-description">
+                    <ul>
+                        <li>Led development of AI simulation models for autonomous vehicle testing, improving simulation accuracy to 97.88% NFR (Normalized Failure Rate)</li>
+                        <li>Architected scalable ML pipelines for computer vision systems processing millions of images daily</li>
+                        <li>Developed video analytics bots using LLMs for real-time vehicle behavior analysis</li>
+                        <li>Collaborated with cross-functional teams to deploy models to production, reducing deployment time by 35%</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">AI/ML Engineer</div>
+                        <div class="item-company">Uniphore</div>
+                        <div class="item-location">Palo Alto, USA</div>
+                    </div>
+                    <div class="item-date">2020 - 2022</div>
+                </div>
+                <div class="item-description">
+                    <ul>
+                        <li>Developed speech recognition systems achieving 96.42% transcription accuracy in noisy environments</li>
+                        <li>Built conversational AI chatbots and voice bots using LLMs, increasing customer engagement by 42.15%</li>
+                        <li>Implemented speaker diarization systems with 94.67% accuracy for multi-speaker conversations</li>
+                        <li>Optimized TTS (Text-to-Speech) models reducing latency by 58.33% while maintaining natural speech quality</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Machine Learning Engineer</div>
+                        <div class="item-company">Thinking Machines Data Science</div>
+                        <div class="item-location">Makati, Philippines</div>
+                    </div>
+                    <div class="item-date">2017 - 2020</div>
+                </div>
+                <div class="item-description">
+                    <ul>
+                        <li>Developed AI-powered data science solutions for enterprise clients, achieving 92.45% model accuracy</li>
+                        <li>Built full stack web application with React frontend and Python Flask backend for data analytics platforms</li>
+                        <li>Implemented NLP models for document processing achieving 88.67% entity extraction accuracy</li>
+                        <li>Created chatbot systems for client services, reducing response time by 41.23%</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Junior ML Engineer</div>
+                        <div class="item-company">Visaya KPO</div>
+                        <div class="item-location">Makati, Philippines</div>
+                    </div>
+                    <div class="item-date">2016 - 2017</div>
+                </div>
+                <div class="item-description">
+                    <ul>
+                        <li>Developed speech-to-text (STT) systems for call center applications with 92.18% accuracy</li>
+                        <li>Built customer service chatbots reducing average handling time by 28.45%</li>
+                        <li>Implemented sentiment analysis models for customer feedback with 87.63% accuracy</li>
+                        <li>Assisted in deploying ML models to cloud infrastructure using AWS services</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Education -->
+        <div class="section">
+            <h2 class="section-title">Education</h2>
+            
+            <div class="item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Master of Science in Computer Science</div>
+                        <div class="item-company">Ateneo de Manila University</div>
+                        <div class="item-location">Manila, Philippines</div>
+                    </div>
+                    <div class="item-date">2014 - 2016</div>
+                </div>
+                <div class="item-description">
+                    Advanced studies in deep learning, speech processing, and large language models. Thesis on "Neural Speech Recognition Systems for Low-Resource Languages".
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Bachelor of Science in Computer Science</div>
+                        <div class="item-company">University of the Philippines Diliman</div>
+                        <div class="item-location">Quezon City, Philippines</div>
+                    </div>
+                    <div class="item-date">2010 - 2014</div>
+                </div>
+                <div class="item-description">
+                    Specialized in Artificial Intelligence and Machine Learning. Graduated Magna Cum Laude with focus on neural networks, computer vision, and natural language processing.
+                </div>
+            </div>
+        </div>
+        
+        <!-- Technical Skills -->
+        <div class="section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Programming Languages</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>AI/ML Frameworks</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">Keras</span>
+                        <span class="skill-tag">Hugging Face</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">OpenCV</span>
+                        <span class="skill-tag">Transformers</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Speech Processing</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Text-to-Speech (TTS)</span>
+                        <span class="skill-tag">Speech-to-Text (STT)</span>
+                        <span class="skill-tag">Speaker Diarization</span>
+                        <span class="skill-tag">Voice Activity Detection</span>
+                        <span class="skill-tag">Speech Synthesis</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Large Language Models</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Chatbots</span>
+                        <span class="skill-tag">Video Bots</span>
+                        <span class="skill-tag">Voice Bots</span>
+                        <span class="skill-tag">GPT Models</span>
+                        <span class="skill-tag">BERT</span>
+                        <span class="skill-tag">LLM Fine-tuning</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Full Stack Development</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">REST APIs</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Technologies & Tools</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Azure</span>
+                        <span class="skill-tag">GCP</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">MLflow</span>
+                        <span class="skill-tag">Airflow</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Key Achievements -->
+        <div class="section">
+            <h2 class="section-title">Key Achievements</h2>
+            <div class="item-description">
+                <ul>
+                    <li>Led development of AI simulation models achieving 97.88% NFR accuracy for autonomous vehicle testing</li>
+                    <li>Developed speech recognition systems with 96.42% accuracy in noisy environments</li>
+                    <li>Built LLM-based chatbots increasing customer engagement by 42.15%</li>
+                    <li>Implemented speaker diarization systems with 94.67% accuracy</li>
+                    <li>Optimized TTS models reducing latency by 58.33%</li>
+                    <li>Created full stack applications reducing response times by 41.23%</li>
+                    <li>Completed 50+ AI/ML projects across 4 companies</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
